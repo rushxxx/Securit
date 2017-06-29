@@ -1,8 +1,11 @@
 @import "layout/normalize.css";
 @import "layout/adjustment.scss";
 
+@import "../bower_components/owl.carousel/dist/assets/owl.carousel.min.css";
+@import "../bower_components/owl.carousel/dist/assets/owl.theme.green.min.css";
+
 //  -sections
 @import "sections/main.scss";
-@import "sections/edge.scss";
+@import "sections/promotions.scss";
 @import "sections/header.scss";
 @import "sections/aside.scss";

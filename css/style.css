@@ -1,4 +1,6 @@
 @import url(layout/normalize.css);
+@import url(../bower_components/owl.carousel/dist/assets/owl.carousel.min.css);
+@import url(../bower_components/owl.carousel/dist/assets/owl.theme.green.min.css);
 html, body {
   width: 100%;
   height: 100%;
@@ -26,6 +28,7 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 250px;
 }
 
 .container {
@@ -118,8 +121,72 @@ footer {
   margin-top: 20px;
 }
 
-.edge {
-  background-color: aquamarine;
+.promotions {
+  background: #c3d177;
+  background: -moz-linear-gradient(left, #c3d177 0%, #72aa00 52%, #c3d177 100%);
+  background: -webkit-linear-gradient(left, #c3d177 0%, #72aa00 52%, #c3d177 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#c3d177), color-stop(52%, #72aa00), to(#c3d177));
+  background: -o-linear-gradient(left, #c3d177 0%, #72aa00 52%, #c3d177 100%);
+  background: linear-gradient(to right, #c3d177 0%, #72aa00 52%, #c3d177 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3d177', endColorstr='#c3d177',GradientType=1 );
+  position: relative;
+}
+
+.container-promotions {
+  width: 540px;
+  height: 400px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carousel__button {
+  position: absolute;
+  width: 29px;
+  height: 20px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  top: 50%;
+}
+
+.carousel__button-prev {
+  left: 50px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.carousel__button-next {
+  right: 50px;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.carousel__button:hover {
+  cursor: pointer;
+}
+
+.carousel {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.carousel-item {
+  width: 540px;
+  height: 400px;
+  background-color: green;
+  text-align: center;
+  font-size: 50px;
+  line-height: 200px;
 }
 
 .aside {

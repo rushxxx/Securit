@@ -1,0 +1,53 @@
+.promotions{
+  background: #c3d177;
+background: -moz-linear-gradient(left, #c3d177 0%, #72aa00 52%, #c3d177 100%);
+background: -webkit-linear-gradient(left, #c3d177 0%,#72aa00 52%,#c3d177 100%);
+background: linear-gradient(to right, #c3d177 0%,#72aa00 52%,#c3d177 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3d177', endColorstr='#c3d177',GradientType=1 );
+  position: relative;
+}
+
+.container-promotions{
+  width: 540px;
+  height: 400px;
+  display: flex;
+}
+
+.carousel__button{
+  position: absolute;
+  width: 29px;
+  height: 20px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  top: 50%;
+  
+  &-prev{
+    left: 50px;
+    transform: rotate(90deg);
+  }
+
+  &-next{
+    right: 50px;
+    transform: rotate(-90deg);
+  }
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.carousel{
+display: flex;
+justify-content: center;
+}
+
+.carousel-item{
+  width: 540px;
+  height: 400px;
+  background-color: green;
+  text-align: center;
+  font-size: 50px;
+  line-height: 200px;
+}
+
