@@ -1,4 +1,8 @@
-@import url(layout/normalize.css);
-@import url(layout/adjustment.scss);
+@import "layout/normalize.css";
+@import "layout/adjustment.scss";
 
-@import url(sections/main.scss);
+//  -sections
+@import "sections/main.scss";
+@import "sections/edge.scss";
+@import "sections/header.scss";
+@import "sections/nav.scss";
