@@ -1,11 +1,19 @@
 .main{
 	color: #fff;
+	margin-left: 250px;
+}
+
+.dark-bg{
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .tagline{
-	text-transform: uppercase; 
+	width: 500px;
 	font-size: 55px;
 	font-weight: 900;
+	margin: 120px 0;
+	letter-spacing: 5px;
 }
 
 .main__item{
@@ -15,6 +23,8 @@
 		
 		&-text{
 				margin-left: 20px;
+				font-size: 20px;
+				font-weight: 600;
 		}
 }
 

@@ -1,0 +1,63 @@
+.aside{
+	width: 250px;
+	height: 100vh;
+  position: fixed;
+  background-color: #fff;
+}
+
+.logo{
+    height: 55px;
+    width: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 75px 25px 35px;
+
+  &-wrapper{
+  	height: 200px;
+	  background-color: #484848;
+	  color: #fff;
+	  text-align: center;
+  }
+
+  &-description{
+  	font-size: 20px;
+  }
+}
+
+.menu{
+	
+	&__list{
+		text-align: center;
+    margin: 50px 0;
+    line-height: 45px;
+    font-size: 25px;
+	}
+
+	&__item{
+		border-right: 6px solid transparent;
+
+		&-active{
+			border-right: 6px solid #33c1e3;
+
+			.menu__item-link{
+				color: #33c1e3;
+				font-weight: 600;
+			}
+			
+		}
+	}
+
+	&__item-link{
+		color: #000;
+
+		&:hover{
+			color: #33c1e3;
+			font-weight: 600;
+
+			.menu__item{
+				border-right: 6px solid #33c1e3;
+			}
+		}
+	}
+}

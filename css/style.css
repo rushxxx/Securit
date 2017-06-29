@@ -31,7 +31,6 @@ body {
 .container {
   width: 940px;
   margin: auto;
-  margin-left: 150px;
 }
 
 * {
@@ -73,12 +72,20 @@ footer {
 
 .main {
   color: #fff;
+  margin-left: 250px;
+}
+
+.dark-bg {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .tagline {
-  text-transform: uppercase;
+  width: 500px;
   font-size: 55px;
   font-weight: 900;
+  margin: 120px 0;
+  letter-spacing: 5px;
 }
 
 .main__item {
@@ -95,6 +102,8 @@ footer {
 
 .main__item-text {
   margin-left: 20px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .services-button {
@@ -113,22 +122,64 @@ footer {
   background-color: aquamarine;
 }
 
-.logo {
-  width: 150px;
-  height: 60px;
+.aside {
+  width: 250px;
+  height: 100vh;
   position: fixed;
-  left: 0;
-  background-size: contain;
-  background-repeat: no-repeat;
   background-color: #fff;
 }
 
-.menu {
+.logo {
+  height: 55px;
   width: 150px;
-  height: 100vh;
-  position: fixed;
-  top: 60px;
-  background-color: #fff;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 75px 25px 35px;
+}
+
+.logo-wrapper {
+  height: 200px;
+  background-color: #484848;
+  color: #fff;
+  text-align: center;
+}
+
+.logo-description {
+  font-size: 20px;
+}
+
+.menu__list {
+  text-align: center;
+  margin: 50px 0;
+  line-height: 45px;
+  font-size: 25px;
+}
+
+.menu__item {
+  border-right: 6px solid transparent;
+}
+
+.menu__item-active {
+  border-right: 6px solid #33c1e3;
+}
+
+.menu__item-active .menu__item-link {
+  color: #33c1e3;
+  font-weight: 600;
+}
+
+.menu__item-link {
+  color: #000;
+}
+
+.menu__item-link:hover {
+  color: #33c1e3;
+  font-weight: 600;
+}
+
+.menu__item-link:hover .menu__item {
+  border-right: 6px solid #33c1e3;
 }
 
 /*# sourceMappingURL=style.css.map */
